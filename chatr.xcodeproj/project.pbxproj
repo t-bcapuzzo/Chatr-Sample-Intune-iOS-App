@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,10 +15,6 @@
 		AC124D5D246B30FC00409590 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC124D5C246B30FC00409590 /* CoreServices.framework */; };
 		AC2C0A7026127BD900580E00 /* MSAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2C0A6F26127BD900580E00 /* MSAL.xcframework */; };
 		AC2C0A7126127BD900580E00 /* MSAL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC2C0A6F26127BD900580E00 /* MSAL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ACA9E94325BF445300CB347D /* IntuneMAMSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA9E94225BF445300CB347D /* IntuneMAMSwift.xcframework */; };
-		ACA9E94425BF445300CB347D /* IntuneMAMSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACA9E94225BF445300CB347D /* IntuneMAMSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ACA9E94625BF445600CB347D /* IntuneMAMSwiftStub.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA9E94525BF445600CB347D /* IntuneMAMSwiftStub.xcframework */; };
-		ACA9E94725BF445600CB347D /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACA9E94525BF445600CB347D /* IntuneMAMSwiftStub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C01A67E020DAB03F00F80AFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A67DF20DAB03F00F80AFB /* AppDelegate.swift */; };
 		C01A67E220DAB03F00F80AFB /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A67E120DAB03F00F80AFB /* LoginPage.swift */; };
 		C01A67E520DAB03F00F80AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01A67E320DAB03F00F80AFB /* Main.storyboard */; };
@@ -49,8 +45,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AC2C0A7126127BD900580E00 /* MSAL.xcframework in Embed Frameworks */,
-				ACA9E94425BF445300CB347D /* IntuneMAMSwift.xcframework in Embed Frameworks */,
-				ACA9E94725BF445600CB347D /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,7 +58,7 @@
 		68EE322B21F141C600C47FA1 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		68FECA9B2204CA1700540C42 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		AC124D5C246B30FC00409590 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		AC2C0A6F26127BD900580E00 /* MSAL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MSAL.xcframework; sourceTree = "<group>"; };
+		AC2C0A6F26127BD900580E00 /* MSAL.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:UBF8T346G9:Microsoft Corporation"; lastKnownFileType = wrapper.xcframework; path = MSAL.xcframework; sourceTree = "<group>"; };
 		ACA9E94225BF445300CB347D /* IntuneMAMSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IntuneMAMSwift.xcframework; sourceTree = "<group>"; };
 		ACA9E94525BF445600CB347D /* IntuneMAMSwiftStub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IntuneMAMSwiftStub.xcframework; sourceTree = "<group>"; };
 		C01A67DC20DAB03F00F80AFB /* chatr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +93,6 @@
 			files = (
 				C0E7DA1E20FE89DB00EA7494 /* WebKit.framework in Frameworks */,
 				C0E7DA1C20FE89D400EA7494 /* QuartzCore.framework in Frameworks */,
-				ACA9E94325BF445300CB347D /* IntuneMAMSwift.xcframework in Frameworks */,
 				C0E7DA1A20FE89C800EA7494 /* AudioToolbox.framework in Frameworks */,
 				C0E7DA1820FE89B500EA7494 /* LocalAuthentication.framework in Frameworks */,
 				AC124D5D246B30FC00409590 /* CoreServices.framework in Frameworks */,
@@ -107,7 +100,6 @@
 				C0E7DA1420FE89A300EA7494 /* libc++.tbd in Frameworks */,
 				AC2C0A7026127BD900580E00 /* MSAL.xcframework in Frameworks */,
 				C0E7DA1220FE899900EA7494 /* libsqlite3.tbd in Frameworks */,
-				ACA9E94625BF445600CB347D /* IntuneMAMSwiftStub.xcframework in Frameworks */,
 				C0E7DA1020FE898D00EA7494 /* SystemConfiguration.framework in Frameworks */,
 				C0E7DA0C20FE897900EA7494 /* Security.framework in Frameworks */,
 				C0E7DA0A20FE897200EA7494 /* MessageUI.framework in Frameworks */,
