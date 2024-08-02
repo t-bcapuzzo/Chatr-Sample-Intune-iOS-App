@@ -1,0 +1,15 @@
+{
+  "originHash" : "6e8bf007f27c85c6d76d502a584f72ac04edbceae1e675bc74d8d29596ea3b6d",
+  "pins" : [
+    {
+      "identity" : "ms-intune-app-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/t-bcapuzzo/ms-intune-app-sdk-ios",
+      "state" : {
+        "branch" : "main",
+        "revision" : "bccd7ecca7a83c58aba86b2ff0800cc2aa4ccedd"
+      }
+    }
+  ],
+  "version" : 3
+}

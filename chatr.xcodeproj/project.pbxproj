@@ -12,6 +12,7 @@
 		68BD62D422039F4700FC3F16 /* EnrollmentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD62D322039F4700FC3F16 /* EnrollmentDelegate.swift */; };
 		68EE322C21F141C600C47FA1 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EE322B21F141C600C47FA1 /* KeychainManager.swift */; };
 		68FECA9C2204CA1700540C42 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FECA9B2204CA1700540C42 /* UIUtils.swift */; };
+		A0553CFD2C5D69BC00025F1C /* IntuneMAMSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A0553CFC2C5D69BC00025F1C /* IntuneMAMSwift */; };
 		AC124D5D246B30FC00409590 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC124D5C246B30FC00409590 /* CoreServices.framework */; };
 		AC2C0A7026127BD900580E00 /* MSAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2C0A6F26127BD900580E00 /* MSAL.xcframework */; };
 		AC2C0A7126127BD900580E00 /* MSAL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC2C0A6F26127BD900580E00 /* MSAL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -92,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0E7DA1E20FE89DB00EA7494 /* WebKit.framework in Frameworks */,
+				A0553CFD2C5D69BC00025F1C /* IntuneMAMSwift in Frameworks */,
 				C0E7DA1C20FE89D400EA7494 /* QuartzCore.framework in Frameworks */,
 				C0E7DA1A20FE89C800EA7494 /* AudioToolbox.framework in Frameworks */,
 				C0E7DA1820FE89B500EA7494 /* LocalAuthentication.framework in Frameworks */,
@@ -188,6 +190,9 @@
 			dependencies = (
 			);
 			name = chatr;
+			packageProductDependencies = (
+				A0553CFC2C5D69BC00025F1C /* IntuneMAMSwift */,
+			);
 			productName = chatr;
 			productReference = C01A67DC20DAB03F00F80AFB /* chatr.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = C01A67D320DAB03F00F80AFB;
+			packageReferences = (
+				A0553CFB2C5D69BC00025F1C /* XCRemoteSwiftPackageReference "ms-intune-app-sdk-ios" */,
+			);
 			productRefGroup = C01A67DD20DAB03F00F80AFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -484,6 +492,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0553CFB2C5D69BC00025F1C /* XCRemoteSwiftPackageReference "ms-intune-app-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/t-bcapuzzo/ms-intune-app-sdk-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0553CFC2C5D69BC00025F1C /* IntuneMAMSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0553CFB2C5D69BC00025F1C /* XCRemoteSwiftPackageReference "ms-intune-app-sdk-ios" */;
+			productName = IntuneMAMSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C01A67D420DAB03F00F80AFB /* Project object */;
 }
